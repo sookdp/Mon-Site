@@ -8,6 +8,7 @@ html {
     box-sizing: border-box;
 }
 .titre {
+    font-family: Century Gothic;
     color: #ffffff;
     letter-spacing: 2px;
     border-bottom: 2px solid #e7e7e7;
@@ -22,7 +23,7 @@ summary {
     text-align: center;
     padding: 12px 10px;
     width: 23px;
-    height: 17px;
+    height: auto;
     background-color: var(--primColor);
     border: 2px solid white;
     border-radius: 15px;
@@ -89,7 +90,7 @@ summary {
     padding: 12px 24px;
     margin: 0 16px;
     color: rgb(255, 255, 255);
-    font-family: Bradley Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Century Gothic;
     border-bottom: 1px solid white;
     text-decoration: none;
     text-align: center;
@@ -107,8 +108,6 @@ summary {
   }
   .menu a:hover {
     filter: brightness(50%);
-    background-color: #3e5f3e;
-    padding: 2mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,6 +148,7 @@ summary {
     text-align: center;
     flex-wrap: wrap;
     text-decoration-color: #ffffff;
+    font-family: Century Gothic;
 }
 .card {
     margin-left: 50%;
@@ -163,7 +163,8 @@ summary {
     
 }
 #pub {
-    text-align: center;  
+    text-align: center; 
+    font-family: Century Gothic; 
 }
 .card-image{
     background-color: rgb(0, 0, 0);
@@ -175,6 +176,7 @@ summary {
     background-image: url("https://i.f1g.fr/media/eidos/orig/2022/07/15/XVM4e902ee6-0441-11ed-bff5-2b04aed927b3.jpg");
     background-size: cover;
     background-position: fixed;
+    font-family: Century Gothic;
 }
 #IM {
     background-image: url("https://mondedulivre.hypotheses.org/files/2014/03/Meilleures-ventes-Japon-manga-2013-640x480.jpg");
@@ -197,7 +199,7 @@ summary {
 }
 #titre, #texte {
     color: #ffffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Century Gothic;
 }
 /*  !!! M & M avec la tête du priemier M sur la fin du deuxième M  */
 h2 {

@@ -14,7 +14,8 @@ html {
 }
 #title{
     background :#3e5f3e;
-    height: 50px;
+    height: 55px;
+    font-family: Century Gothic;
 }
 
 summary {
@@ -89,7 +90,7 @@ summary {
     padding: 12px 24px;
     margin: 0 16px;
     color: rgb(255, 255, 255);
-    font-family: Bradley Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Century Gothic;
     border-bottom: 1px solid white;
     text-decoration: none;
     text-align: center;
@@ -107,8 +108,6 @@ summary {
   }
   .menu a:hover {
     filter: brightness(50%);
-    background-color: #3e5f3e;
-    padding: 2mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -143,64 +142,50 @@ summary {
   
 .container{
     margin-left: 2%;
-    padding: 1px;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     text-decoration-color: #ffffff;
+    color: #ffffff;
+    font-family: Century Gothic;
 }
 .card {
+    margin-left: 50%;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    background-color: #3e5f3e;
+    width: 298px;
+    height: 445px;
+    margin : 5px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+#cardim{
     margin-left: 50%;
     padding: 1px;
     display: grid;
     grid-template-rows: max-content 200px 1fr;
     background-color: #3e5f3e;
-    width: 300px;
-    height: 500px;
+    width: 298px;
+    height: 445px;
     margin : 5px;
     border-radius: 15px;
-    
-}
-#pub {
-    text-align: center;  
+    background-size: cover;
 }
 .card-image{
     background-color: #3e5f3e;
-    height: 400px;
-    margin-bottom: 10px;
-    border-radius: 15px 15px 0 0;
-}
-#TM {
-    /*background-image: url("https://i.f1g.fr/media/eidos/orig/2022/07/15/XVM4e902ee6-0441-11ed-bff5-2b04aed927b3.jpg");*/
+    height: 445px;
+    border-bottom: 0;
+    border-radius: 15px;
     background-size: cover;
+    overflow : hidden;
+}
+#carte {
+  background-size: cover;
     background-position: fixed;
-}
-#IM {
-    /*background-image: url("https://mondedulivre.hypotheses.org/files/2014/03/Meilleures-ventes-Japon-manga-2013-640x480.jpg");*/
-    background-size: cover;
-    display: flex;
+    border-radius: 15px;
     align-items: center;
-}
-#pub1 {
-    /*background-image: url("https://oss4lib.org/wp-content/uploads/2022/07/top-mangas-en-ligne.webp");*/
-    background-size: cover;
-}
-
-#pub2{
-    /*background-image: url("https://paoru.fr/wp-content/uploads/2013/12/Best-sellers-Mangas-Japon-2013.jpg");*/
-    background-size: cover;
-}
-#haut{
-    color: black;
-    font-family: Bradley Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-#titre, #texte {
-    color: #ffffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-/*  !!! M & M avec la tête du priemier M sur la fin du deuxième M  */
-h2 {
-    border-bottom: 1px solid #e7e7e7;
-    color: #ffffff;
+    overflow : hidden;
 }
