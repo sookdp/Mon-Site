@@ -5,25 +5,27 @@
     <title>Accueil</title>
     <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <h1 class="titre" id="title">Manga Library</h1>
-    <details>
-        <summary></summary>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="guide.html">Guide</a></li>
-                <li><a href="mlibrary.html">Manga Library</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="apropos.html">A Propos</a></li>
-            </ul>
-        </nav>
-    </details>
     <meta name="description" content="Description à mettre">
 </head>
 
 <body>
     <a id="haut"></a>
     <br>
+        <nav class="navbar">
+            <a><img src="assets/img/logo.png" class="logoimg"></a>
+            <a href="#" class="logo">Manga Library</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="guide.html" class="menu">Guide</a></li>
+                    <li><a href="mlibrary.html" class="menu">Manga Library</a></li>
+                    <li><a href="contacts.html" class="menu">Contacts</a></li>
+                    <li><a href="apropos.html" class="menu">A Propos</a></li>
+                </ul>
+            </div>
+            <img src="assets/img/hamburger.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    <header></header>
     <section class="container">
         <article class="card">
             <article class="card-image" id="TM"></article>
@@ -51,4 +53,14 @@
         </article>
     </section>
     <a href="#haut"><img src="assets/img/scroll.png" alt=""></a>		
-</body> 
+</body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')})
+    </script>
+
+</html>

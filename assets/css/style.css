@@ -1,145 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: nome;
+    list-style: none;
+}
 body {
     background-color: #191919;
-    background-repeat: no-repeat;
-    background-attachment : scroll;
-    background-size: cover;
-}
-html {
-    box-sizing: border-box;
-}
-.titre {
     font-family: Century Gothic;
-    color: #ffffff;
-    letter-spacing: 2px;
-    border-bottom: 2px solid #e7e7e7;
 }
-#title{
-    background :#3e5f3e;
-    height: 50px;
+ header{
+    height: 25vh;
+    width: 100vw;
+    background-size: cover;
+ }
+ .navbar {
+    position: absolute;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+ }
+.navbar a {
+    color: #e7e7e7;
+}
+.navbar .logo {
+    font-size: 1cm;
+    font-weight: bold;
+}
+.navbar .logoimg {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left : 40px;
+  width: 125px;
+}
+.navbar .nav-links ul {
+    display: flex;
+
+}
+.navbar .nav-links ul li {
+    margin: 0 25px;
+
+}
+.navbar .nav-links ul li.active a {
+    color: #3c943c;
+    font-weight: 600;
+}
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right : 40px;
+    width: 35px;
+}
+.mobile-menu{
+    margin-left: 0;
 }
 
-summary {
-    writing-mode: vertical-lr;
-    text-align: center;
-    padding: 12px 10px;
-    width: 23px;
-    height: auto;
-    background-color: var(--primColor);
-    border: 2px solid white;
-    border-radius: 15px;
-    color: var(--secoColor);
-    cursor: pointer;
-    user-select: none;
-    outline: none;
-    transition: transform 200ms ease-in-out 0s;
-  }
-  summary::before,
-  summary::after {
-    position: static;
-    top: 0;
-    left: 0;
-  }
-  summary::before {
-    content: "";
-  }
-  summary::after {
-    content: "lll";
-    color: white;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-left: 20px;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  summary:hover {
-    transform: scale(1.1);
-  }
-  summary::marker {
-    font-size: 0;
-  }
-  summary::-webkit-details-marker {
-    display: none;
-  }
-  details[open] .menu {
-    animation-name: menuAnim;
-  }
-  details[open] summary::before {
-    content: "X";
-    color: white;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  details[open] summary::after {
-    content: "";
-  }
-  .menu {
-    border-bottom: 50px;
-    height: auto;
-    width: fit-content;
-    border-radius: 15px;
-    background-color: #3e5f3e;
-    box-shadow: 0 4px 12px 0 #ffffff;
-    margin-top: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    animation: closeMenu 300ms ease-in-out forwards;
-  }
-  .menu a {
-    padding: 12px 24px;
-    margin: 0 16px;
-    color: rgb(255, 255, 255);
-    font-family: Century Gothic;
-    border-bottom: 1px solid white;
-    text-decoration: none;
-    text-align: center;
-    transition: filter 200ms linear 0s;
-    height: auto;
-  }
-  .menu{
-    color : white
-  }
-  .menu a:nth-of-type(1) {
-    padding-top: 24px;
-  }
-  .menu a:nth-last-of-type(1) {
-    border-bottom: none;
-  }
-  .menu a:hover {
-    filter: brightness(50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  details::before {
-    content: "← Cliquez pour dérouler le menu";
-    color: white;
-    position: absolute;
-    margin-left: 80px;
-    padding: 10px 10px;
-    opacity: 0.7;
-  }
-  details[open]::before {
-    animation: fadeMe 300ms linear forwards;
-  }
-  @keyframes menuAnim {
-    0% {
-      height: 0;
+@media screen and (max-width : 900px) {
+  .navbar .logo {
+        position: absolute;
+        top: 25px;
+        left: 170px;
+        font-size: 1cm;
+        font-weight: bold;
     }
-    100% {
-      height: 312px;
+    .navbar{
+        padding: 0;
     }
-  }
-  @keyframes fadeMe {
-    0% {
-      opacity: 0.4;
+    .navbar .menu-hamburger {
+        display: block;
     }
-    100% {
-      opacity: 0;
+
+  .nav-links {
+        top : 0;
+        left: 0;
+        position: absolute;
+        background-color: #ffffff25;
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 1s ease;
     }
-  }
-  
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+    }
+}
+
 .container{
     margin-left: 2%;
     padding: 1px;
@@ -201,7 +162,13 @@ summary {
     color: #ffffff;
     font-family: Century Gothic;
 }
-/*  !!! M & M avec la tête du priemier M sur la fin du deuxième M  */
+.titre {
+  font-family: Century Gothic;
+  color: #ffffff;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #e7e7e7;
+}
+
 h2 {
     border-bottom: 1px solid #e7e7e7;
     color: #ffffff;
