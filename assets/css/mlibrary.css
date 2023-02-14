@@ -116,7 +116,7 @@ width: 125px;
     display: grid;
     grid-template-rows: max-content 200px 1fr;
     background-color: #3e5f3e;
-    width: 298px;
+    width: 300px;
     height: 445px;
     margin : 5px;
     border-radius: 15px;
@@ -128,8 +128,8 @@ width: 125px;
     padding: 1px;
     display: grid;
     grid-template-rows: max-content 200px 1fr;
-    background-color: #3e5f3e;
-    width: 298px;
+    background-color: #191919;
+    width: 300px;
     height: 445px;
     margin : 5px;
     border-radius: 15px;
@@ -137,6 +137,7 @@ width: 125px;
 }
 .card-image{
     background-color: #3e5f3e;
+    width: 300px;
     height: 445px;
     border-bottom: 0;
     border-radius: 15px;
@@ -144,9 +145,11 @@ width: 125px;
     overflow : hidden;
 }
 #carte {
-  background-size: cover;
+    background-size: cover;
     background-position: fixed;
     border-radius: 15px;
+    width: 300px;
+    height: 450px;
     align-items: center;
     overflow : hidden;
 }

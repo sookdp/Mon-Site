@@ -5,58 +5,58 @@
   list-style: none;
 }
 body {
-  background-color: #191919;
-  font-family: Century Gothic;
+    background-color: #191919;
+    font-family: Century Gothic;
 }
 header{
-  height: 25vh;
-  width: 100vw;
-  background-size: cover;
+    height: 25vh;
+    width: 100vw;
+    background-size: cover;
 }
 .navbar {
-  position: absolute;
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  align-items: center;
+    position: absolute;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
 }
 .navbar a {
-  color: #e7e7e7;
+    color: #e7e7e7;
 }
 .navbar .logo {
-  font-size: 1cm;
-  font-weight: bold;
+    font-size: 1cm;
+    font-weight: bold;
 }
 .navbar .logoimg {
-display: flex;
-position: absolute;
-top: 0px;
-left : 40px;
-width: 125px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left : 40px;
+    width: 125px;
 }
 .navbar .nav-links ul {
-  display: flex;
+    display: flex;
 
 }
 .navbar .nav-links ul li {
-  margin: 0 25px;
+    margin: 0 25px;
 
 }
 .navbar .nav-links ul li.active a {
-  color: #3c943c;
-  font-weight: 600;
+    color: #3c943c;
+    font-weight: 600;
 }
 .navbar .menu-hamburger {
-  display: none;
-  position: absolute;
-  top: 25px;
-  right : 40px;
-  width: 35px;
+    display: none;
+    position: absolute;
+    top: 25px;
+    right : 40px;
+    width: 35px;
 }
 .mobile-menu{
-  margin-left: 0;
+    margin-left: 0;
 }
 
 @media screen and (max-width : 900px) {
@@ -131,25 +131,11 @@ width: 125px;
     margin-bottom: 10px;
     border-radius: 15px 15px 0 0;
 }
-#TM {
-    /*background-image: url("https://i.f1g.fr/media/eidos/orig/2022/07/15/XVM4e902ee6-0441-11ed-bff5-2b04aed927b3.jpg");*/
+#moi {
+    width: 400x;
+    height: 400px;
     background-size: cover;
     background-position: fixed;
-}
-#IM {
-    /*background-image: url("https://mondedulivre.hypotheses.org/files/2014/03/Meilleures-ventes-Japon-manga-2013-640x480.jpg");*/
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-#pub1 {
-    /*background-image: url("https://oss4lib.org/wp-content/uploads/2022/07/top-mangas-en-ligne.webp");*/
-    background-size: cover;
-}
-
-#pub2{
-    /*background-image: url("https://paoru.fr/wp-content/uploads/2013/12/Best-sellers-Mangas-Japon-2013.jpg");*/
-    background-size: cover;
 }
 #haut{
     color: black;
