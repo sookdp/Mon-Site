@@ -1,19 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: nome;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: nome;
+    list-style: none;
 }
 body {
     background-color: #191919;
     font-family: Century Gothic;
 }
-header{
-    height: 25vh;
+ header{
+    height: 17.5vh;
     width: 100vw;
     background-size: cover;
-}
-.navbar {
+    background-color: #3e5f3e;
+ }
+ .navbar {
     position: absolute;
     padding: 25px;
     display: flex;
@@ -21,33 +22,49 @@ header{
     width: 100%;
     box-sizing: border-box;
     align-items: center;
-}
+ }
 .navbar a {
     color: #e7e7e7;
 }
 .navbar .logo {
+    text-decoration: none;
     font-size: 1cm;
     font-weight: bold;
+    align-items: auto;
 }
 .navbar .logoimg {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    left : 40px;
-    width: 125px;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left : 50px;
+  width: 100px;
 }
 .navbar .nav-links ul {
     display: flex;
+    text-decoration: none;
 
 }
 .navbar .nav-links ul li {
     margin: 0 25px;
 
 }
+.navbar .nav-links ul li a {
+    text-decoration: none;
+}
 .navbar .nav-links ul li.active a {
     color: #3c943c;
     font-weight: 600;
+    margin: 0;
+    border: none;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
 }
+.menu:hover {
+	color:#3c943c;
+	transition: .5s;
+}
+
 .navbar .menu-hamburger {
     display: none;
     position: absolute;
@@ -100,8 +117,65 @@ header{
       margin: 25px 0;
   }
 }
+@media screen and (min-width : 300px) and (max-width : 500px) {
+    header{
+        height: 14vh;
+        width: 100%;
+        background-size: cover;
+        background-color: #3e5f3e;
+     }
+    .navbar .logo {
+          position: absolute;
+          top: 15px;
+          left: 100px;
+          font-size: 1cm;
+          font-weight: bold;
+      }
+      .navbar .logoimg {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left : 10px;
+        width: 75px;
+      }
+      .navbar{
+          padding: 0;
+      }
+      .navbar .menu-hamburger {
+          display: block;
+          top: 25px;
+          right : 20px;
+          width: 35px;
+      }
+    .nav-links {
+          top : 0;
+          left: 0;
+          position: absolute;
+          background-color: #ffffff25;
+          backdrop-filter: blur(7px);
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: -100%;
+          transition: all 1s ease;
+      }
+      .nav-links.mobile-menu{
+          margin-left: 0;
+      }
+      .nav-links ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .navbar .nav-links ul li {
+          margin: 25px 0;
+      }
+}
   
 .container{
+    margin-top: 20px;
     margin-left: 2%;
     padding: 1px;
     display: flex;
@@ -122,13 +196,10 @@ header{
     border-radius: 15px;
     
 }
-#pub {
-    text-align: center;  
-}
 .card-image{
     background-color: #3e5f3e;
     height: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     border-radius: 15px 15px 0 0;
 }
 #moi {
@@ -136,10 +207,6 @@ header{
     height: 400px;
     background-size: cover;
     background-position: fixed;
-}
-#haut{
-    color: black;
-    font-family: Bradley Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #titre, #texte {
     color: #ffffff;
@@ -149,9 +216,7 @@ header{
   font-family: Century Gothic;
   color: #ffffff;
   letter-spacing: 2px;
-  border-bottom: 2px solid #e7e7e7;
 }
 h2 {
-    border-bottom: 1px solid #e7e7e7;
     color: #ffffff;
 }
