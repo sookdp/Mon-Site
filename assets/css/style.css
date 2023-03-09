@@ -36,7 +36,7 @@ header{
   display: flex;
   position: absolute;
   top: 0px;
-  left : 50px;
+  left : 20px;
   width: 100px;
 }
 .navbar .nav-links ul {
@@ -83,7 +83,7 @@ header{
   .navbar .logo {
         position: absolute;
         top: 25px;
-        left: 170px;
+        left: 140px;
         font-size: 1cm;
         font-weight: bold;
     }
@@ -124,7 +124,7 @@ header{
 
 @media only screen and (max-width : 420px) {
     header{
-        height: 14vh;
+        height: 5vh;
         width: 100%;
         background-size: cover;
         background-color: #3e5f3e;
