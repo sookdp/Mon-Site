@@ -9,7 +9,7 @@ body {
   font-family: Century Gothic;
 }
 header{
-  height: 17.5vh;
+  height: 100px;
   width: 100vw;
   background-size: cover;
   background-color: #3e5f3e;
@@ -31,13 +31,6 @@ header{
   font-weight: bold;
   align-items: auto;
   text-decoration: none;
-}
-.navbar .logoimg {
-display: flex;
-position: absolute;
-top: 0px;
-left : 50px;
-width: 100px;
 }
 .navbar .nav-links ul {
   display: flex;
